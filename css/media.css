@@ -1,0 +1,71 @@
+/* ================= DESKTOP FIRST ================= */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1400px) {}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {}
+
+/* md <= Large (lg) */
+@media (max-width : 992px) {}
+
+/* sm <= Medium (md) */
+@media (max-width : 768px) {}
+
+/* xs <= Small (sm) */
+@media (max-width : 576px) {}
+
+
+/* ================= MOBILE FIRST ================= */
+
+/* Custom (xs) */
+@media (min-width : 0) {}
+
+/* Small (sm) */
+@media (min-width : 576px) {}
+
+/* Medium (md) */
+@media (min-width : 768px) {}
+
+/* Large (lg) */
+@media (min-width : 992px) {}
+
+/* Extra large (xl) */
+@media (min-width : 1200px) {}
+
+/* Extra extra large (xxl) */
+@media (min-width : 1400px) {}
+
+/* =========================== Адаптив\Медиазапросы =========================== */
+
+@media (max-width: 1366px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 650px) {}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 320px) {}
+
+/* =========================== Адаптив\Медиазапросы второй вариант =========================== */
+
+@media (max-width: 1366px) {}
+
+@media (min-width: 1200px) and (max-width: 1365px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 480px) and (max-width: 767px) {}
+
+@media (min-width: 320px) and (max-width: 479px) {}
+
+@media (max-width: 320px) {}

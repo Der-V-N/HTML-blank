@@ -1,0 +1,323 @@
+/* __Общие стили сайта__ */
+
+/* COMMENT==Глобальные переменные== */
+:root {
+  --container-width: 1218px;
+  --container-padding: 24px;
+  --userfont: 'Exo 2', sans-serif, Arial;
+  --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --regular-text: 400;
+  --text-size: 18px;
+  --lineheight: 1.4;
+  --dark-text: #262626;
+  --white-text: #fff;
+  --accent-color: #D31B38;
+  --background-color: #fff;
+  --background-color-reverce: #262626;
+  --section-title-color-dark: #262626;
+  --section-title-color-white: #fff;
+  --btn-line-color: #fff;
+}
+
+/* COMMENT==СБРОСЫ СТИЛЕЙ== */
+
+/* Тег всего документа */
+html {
+  -webkit-box-sizing: border-box;
+  /* блок когда width и height включают в себя значения полей и границ но не margin */
+  box-sizing: border-box;
+}
+
+/*=========== Все теги ==========*/
+
+
+*,
+/* синтаксис "перед контентом" */
+*::before,
+/* синтаксис "после контента" */
+*::after {
+  /* Нследовать от родителя  */
+  box-sizing: inherit;
+}
+
+textarea {
+  border: none;
+}
+
+/* тег содержащий весь контент */
+body {
+  /* Минимальная ширина сайта */
+  min-width: 320px;
+  /* Сброс внешних отступов */
+  margin: 0;
+  /*Цвет фона сайта*/
+  background-color: #fff;
+  /* Шрифты, первый основной, следующие запасные */
+  font-family: var(--userfont);
+  /* устанавливаем размер шрифта ко всему содержанию контента */
+  font-size: var(--text-size);
+  /* отвечает за шрифт, normal или regular */
+  font-weight: var(--regular-text);
+  /* Цвет шрифта */
+  color: var(--white-text);
+  /* Межстрочный интервал шрифта */
+  line-height: var(--lineheight);
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+/* кнопки и формы */
+button,
+input {
+  /* Наследовать шрифт от родителя кнопкам и формам */
+  font: inherit;
+}
+
+/* Изображения */
+img {
+  /* Ширина не больше самого блока */
+  max-width: 100%;
+  /* Высота регулируется автоматически */
+  height: auto;
+}
+
+/* Ссылки */
+a {
+  /* Сброс декорирования, подчеркивания */
+  text-decoration: none;
+  /* Удаляем синий цвет ссылок */
+  color: inherit;
+}
+
+/* Не нумерованный список */
+ul {
+  /* Сброс внешних отступов */
+  margin: 0;
+  /* Сброс внутренних отступов */
+  padding: 0;
+  /* Убираем маркеры (точки) */
+  list-style: none;
+}
+
+/* Заголовки и не нумерованный список */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  /* Сброс внешних отступов */
+  margin: 0;
+  /* Сброс внутренних отступов */
+  padding: 0;
+}
+
+/* Убираем бордер радиусы на устройствах IOS */
+input,
+textarea {
+  border-radius: 0;
+}
+
+/* COMMENT==Классы для сброса== */
+
+/* Класс для сброса свойств СПИСКОВ */
+.list-reset {
+  /* Сброс внешних отступов */
+  margin: 0;
+  /* Сброс внутренних отступов */
+  padding: 0;
+  /* Убираем маркеры (точки) */
+  list-style: none;
+}
+
+/* Класс для сброса свойств КНОПОК */
+.btn-reset {
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Класс для сброса свойств Ссылок */
+.link-reset {
+  font-family: inherit;
+  /* Сброс декорирования, подчеркивания */
+  text-decoration: none;
+  /* Удаляем синий цвет ссылок */
+  color: inherit;
+}
+
+/* Класс для сброса свойств инпутов */
+.input-reset {
+  border: none;
+}
+
+/* Клас для скрытия элемента */
+.visually-hidden {
+  /* Абсалютное позиционирование с наивысшим приоритетом (т.е. если переназначат в дальнейшем, будет игнорировано. Применяться будет данное правило */
+  position: absolute !important;
+  /*устанавливаем видимую часть элемента в 1 пиксель с поддержкой IE6, IE7 */
+  clip: rect(1px 1px 1px 1px);
+  /* сброс внутреннего отступа с наивысшим приоритетом */
+  padding: 0 !important;
+  /* без рамки с наивысшим приоритетом */
+  border: 0 !important;
+  /* Высота */
+  height: 1px !important;
+  /* ширина */
+  width: 1px !important;
+  /* отображение содержания в блоке, hidden - скрыть все что выходит за пределы блока */
+  overflow: hidden;
+}
+
+/* ФИКС при использовании Float, указав класс clearfix элементу float, чтобы блок начался под элементами и не продолжал обтекать  */
+.clearfix::after {
+  /* применяется вместе с after. В данном случае в конце ничего не вставляется */
+  content: "";
+  /* Блочная таблица */
+  display: table;
+  /* отменить обтекание элемента */
+  clear: both;
+}
+
+/*TODO Container */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+/*TODO Container-RIGHT */
+.container-right {
+  padding-left: calc((100% - var(--container-width))/2 + var(--container-padding));
+}
+
+/*TODO Container-LEFT */
+.container-left {
+  padding-right: calc((100% - var(--container-width))/2 + var(--container-padding));
+}
+
+
+/* COMMENT==Общие стили== */
+
+/* Невидимый отступ для якорей ссылок */
+.main>* {
+  margin-top: -120px;
+  padding-top: 120px;
+}
+
+.page {
+  padding-top: 120px;
+}
+
+/* Общие стили кнопок */
+.btn {
+  box-sizing: border-box;
+  padding: 14px 20px;
+  min-width: 270px;
+  min-height: 50px;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-color);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--white-text);
+}
+
+.btn::before,
+.btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  border: 2px solid;
+  transition: all 0.6s ease-in-out;
+}
+
+.btn::before {
+  top: 3px;
+  left: 3px;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: var(--btn-line-color);
+  border-left-color: var(--btn-line-color);
+}
+
+.btn::after {
+  bottom: 3px;
+  right: 3px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: var(--btn-line-color);
+  border-right-color: var(--btn-line-color);
+}
+
+.btn:hover::before,
+.btn:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:focus::before,
+.btn:focus::after {
+  width: 100%;
+  height: 100%;
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+/* Стили заголовков секций */
+.title {
+  display: inline-block;
+  font-family: var(--userfont);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1;
+}
+
+.section-title {
+  position: relative;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 80%;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+
+
+/* COMMENT==Медиазапросы ОБЩИХ стилей== */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1400px) {}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {}
+
+/* md <= Large (lg) */
+@media (max-width : 991px) {}
+
+/* sm <= Medium (md) */
+@media (max-width : 767px) {}
+
+/* xs <= Small (sm) */
+@media (max-width : 575px) {}

@@ -1,0 +1,164 @@
+/* COMMENT импорт стилей */
+@import url(./fonts.css);
+@import url(./normolize.css);
+@import url(./general.css);
+@import url(./header.css);
+
+
+@import url(./footer.css);
+
+
+
+
+/* =========================== HERO =========================== */
+
+
+
+/* =========================== HERO Адаптив\Медиазапросы =========================== */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1400px) {}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {}
+
+/* md <= Large (lg) */
+@media (max-width : 991px) {}
+
+/* sm <= Medium (md) */
+@media (max-width : 767px) {}
+
+/* xs <= Small (sm) */
+@media (max-width : 575px) {}
+
+
+/* =========================== PROMO =========================== */
+
+
+
+/* =========================== PROMO Адаптив\Медиазапросы =========================== */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1400px) {}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {}
+
+/* md <= Large (lg) */
+@media (max-width : 991px) {}
+
+/* sm <= Medium (md) */
+@media (max-width : 767px) {}
+
+/* xs <= Small (sm) */
+@media (max-width : 575px) {}
+
+
+/* =========================== HOW =========================== */
+
+
+
+/* =========================== HOW Адаптив\Медиазапросы =========================== */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1400px) {}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {}
+
+/* md <= Large (lg) */
+@media (max-width : 991px) {}
+
+/* sm <= Medium (md) */
+@media (max-width : 767px) {}
+
+/* xs <= Small (sm) */
+@media (max-width : 575px) {}
+
+
+/* =========================== SERVICE =========================== */
+
+
+
+/* =========================== SERVICE Адаптив\Медиазапросы =========================== */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1400px) {}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {}
+
+/* md <= Large (lg) */
+@media (max-width : 991px) {}
+
+/* sm <= Medium (md) */
+@media (max-width : 767px) {}
+
+/* xs <= Small (sm) */
+@media (max-width : 575px) {}
+
+
+/* =========================== TEAM =========================== */
+
+
+
+/* =========================== TEAM Адаптив\Медиазапросы =========================== */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1400px) {}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {}
+
+/* md <= Large (lg) */
+@media (max-width : 991px) {}
+
+/* sm <= Medium (md) */
+@media (max-width : 767px) {}
+
+/* xs <= Small (sm) */
+@media (max-width : 575px) {}
+
+
+/* =========================== CONTSCTS =========================== */
+
+
+
+/* =========================== CONTACTS Адаптив\Медиазапросы =========================== */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1400px) {}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {}
+
+/* md <= Large (lg) */
+@media (max-width : 991px) {}
+
+/* sm <= Medium (md) */
+@media (max-width : 767px) {}
+
+/* xs <= Small (sm) */
+@media (max-width : 575px) {}
+
+
+/* =========================== FEEDBACK =========================== */
+
+
+
+/* =========================== FEEDBACK Адаптив\Медиазапросы =========================== */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1400px) {}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {}
+
+/* md <= Large (lg) */
+@media (max-width : 991px) {}
+
+/* sm <= Medium (md) */
+@media (max-width : 767px) {}
+
+/* xs <= Small (sm) */
+@media (max-width : 575px) {}

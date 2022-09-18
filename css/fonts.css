@@ -1,0 +1,74 @@
+/* exo-2-regular - latin_cyrillic */
+@font-face {
+  /* Указываем имя шрифта */
+  font-family: 'Exo 2';
+  /* Браузер будет грузить шрифт если есть локально */
+  src: local('Exo 2'),
+    /* Ссылка на шрифт формата woff2 */
+    url('../fonts/exo-2-v20-latin_cyrillic-regular.woff2') format('woff2'),
+    /* Ссылка на шрифт формата woff */
+    url('../fonts/exo-2-v20-latin_cyrillic-regular.woff') format('woff');
+  /* начертание шрифта */
+  font-style: normal;
+  /* Regular */
+  font-weight: 400;
+  /* Способ отображения шрифта в зависимости загрузки, swap - Сразу отрисует текст безопастным шрифтом, когда загрузится заменится */
+  font-display: swap;
+}
+
+/* exo-2-600 - latin_cyrillic */
+@font-face {
+  font-family: 'Exo 2';
+  src: local('Exo 2'),
+    url('../fonts/exo-2-v20-latin_cyrillic-600.woff2') format('woff2'),
+    url('../fonts/exo-2-v20-latin_cyrillic-600.woff') format('woff');
+  font-style: normal;
+  /* Bold */
+  font-weight: 600;
+  font-display: swap;
+}
+
+/* exo-2-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Exo 2';
+  src: local('Exo 2'),
+    url('../fonts/exo-2-v20-latin_cyrillic-700.woff2') format('woff2'),
+    url('../fonts/exo-2-v20-latin_cyrillic-700.woff') format('woff');
+  font-style: normal;
+  /* Semi-Bold */
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'),
+    url('../fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin_cyrillic-regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'),
+    url('../fonts/inter-v12-latin-regular.woff2') format('woff2'),
+    url('../fonts/inter-v12-latin-regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* inter-600 - latin */
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'),
+    url('../fonts/inter-v12-latin-600.woff2') format('woff2'),
+    url('../fonts/inter-v12-latin-600.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
